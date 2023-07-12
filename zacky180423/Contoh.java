@@ -1,0 +1,52 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package zacky180423;
+
+/**
+ *
+ * @author TUF GAMING
+ */
+public class Contoh extends StudentRecord{
+    private String programmingLanguage;
+    private int programmingExperience;
+
+    public Contoh() {
+        super();
+    }
+
+    public Contoh(String name, String address, int age, String programmingLanguage, int programmingExperience) {
+        super(name, address, age); 
+        this.programmingLanguage = programmingLanguage;
+        this.programmingExperience = programmingExperience;
+    }
+
+    private Contoh(String name, String address, int age) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    public String getProgrammingLanguage() {
+        return programmingLanguage;
+    }
+
+    public void setProgrammingLanguage(String programmingLanguage) {
+        this.programmingLanguage = programmingLanguage;
+    }
+
+    public int getProgrammingExperience() {
+        return programmingExperience;
+    }
+
+    public void setProgrammingExperience(int programmingExperience) {
+        this.programmingExperience = programmingExperience;
+    }
+
+    @Override
+    public void print(String temp) {
+        super.print(temp);
+        System.out.println("Programming Language: " + programmingLanguage);
+        System.out.println("Programming Experience: " + programmingExperience + " years");
+}
+}
+
